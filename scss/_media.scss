@@ -1,6 +1,6 @@
-
 @media(max-width:1350px){
   .header{
+    background: url('../img/header/header__bg.png')center/auto 100% no-repeat;
     &__title{
       font-size: 50px;
     }
@@ -16,7 +16,7 @@
 }
 @media(max-width:1200px){
   .header{
-    background: url('../img/header/header__bg.png')top/auto auto  no-repeat;
+
     .nav{
       &__link{
         a{
@@ -69,6 +69,9 @@
   }
 }
 @media(max-width:950px){
+  .main>div, .footer{
+    padding: 75px 0;
+  }
   .container{
     padding: 0 45px;
   }
@@ -125,8 +128,8 @@
     &__item{
       flex: 1 0 100%;
     }
-    &__player iframe{
-      height: 250px;
+    &__player{
+      border-radius:20px;
     }
   }
   .calendar{
@@ -175,6 +178,9 @@
     }
     &__title{
       display: none;
+    }
+    &__text {
+      text-align: center;
       
     }
   }
@@ -237,8 +243,35 @@
   }
 }
 @media(max-width:650px){
+  .main>div, .footer{
+    padding: 50px 0;
+  }
   .container{
     padding: 0 15px;
+  }
+  .header{
+    & nav{
+      padding-top: 20px;
+    }
+    &__title{
+      max-width: 90%;
+      margin-bottom: 45px;
+    }
+  }
+  .features{
+    &__player{
+      max-width: 100%;
+    }
+  }
+  .partners{
+    &__subtitle{
+      max-width: 100%;
+    }
+  }
+  .testimonials{
+    &__subtitle{
+      max-width: 100%;
+    }
   }
   .contact{
     &-form{

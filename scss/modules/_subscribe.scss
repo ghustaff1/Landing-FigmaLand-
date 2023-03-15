@@ -8,6 +8,20 @@
   }
   &-mobile__top{
     display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-mobile__label{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color:#252B42;
+    margin-bottom: 17px;
+  }
+  &-mobile__title{
+    margin-bottom: 30px;
   }
   &__img {
     flex: 1 0 50%;
@@ -19,6 +33,7 @@
   &__text {
     color:#252B42;
     position: relative;
+    
   }
 
   &__label {

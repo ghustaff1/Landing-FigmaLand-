@@ -11,7 +11,7 @@
 }
 @media (max-width: 1200px) {
   .header {
-    background: url("../img/header/header__bg.png") top/auto auto no-repeat;
+    background: url("../img/header/header__bg.png") center/auto 100% no-repeat;
   }
   .header .nav__link a {
     font-size: 18px;
@@ -106,8 +106,8 @@
   .features__item {
     flex: 1 0 100%;
   }
-  .features__player iframe {
-    height: 250px;
+  .features__player {
+    border-radius: 20px;
   }
   .calendar__row {
     flex-direction: column;

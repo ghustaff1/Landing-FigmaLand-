@@ -1,7 +1,7 @@
 .header {
   padding-top: 39px;
   min-height: 100vh;
-  background: url("../img/header/header__bg.png") 0 0/100% auto no-repeat;
+  background: url("../img/header/header__bg.png") 0 0/100% 100% no-repeat;
 }
 .header .nav {
   padding-bottom: 39px;

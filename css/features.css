@@ -46,13 +46,19 @@
   font-size: 18px;
   line-height: 25px;
 }
-.features__player iframe {
-  border: none;
+.features__player {
   border-radius: 50px;
-  width: 90%;
-  height: 660px;
+  max-width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.features__player video {
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   transition: all 0.5s ease;
 }
-.features__player iframe:hover {
+.features__player video:hover {
   box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.18);
 }

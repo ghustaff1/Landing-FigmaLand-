@@ -69,10 +69,18 @@ body{
   font-size: 48px; 
   line-height: 55px
 }
+.main-title-mobile{ 
+  max-width: 70%;
+  margin: 0 auto;
+}
 .main-subtitle{
   color: #374754;
   font-size: 28px; 
   line-height: 40px
+}
+.main-subtitle-mobile{
+  max-width: 80%;
+  margin: 0 auto;
 }
 //Modal
 .modal-try {
@@ -198,7 +206,5 @@ body{
 @import "./modules/footer";
 
 //Media
-@import "./media.scss"; 
-
-
+@import "./media";
 
