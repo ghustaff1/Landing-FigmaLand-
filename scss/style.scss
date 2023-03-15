@@ -1,0 +1,204 @@
+
+
+//Fonts
+// @font-face {
+//   font-family: 'Graphik';
+//   src: url(../fonts/Graphik/Graphik-Bold.eot);
+//   src: url(../fonts/Graphik/Graphik-Bold.eot?#iefix) format('embedded-opentype'),
+//        url(../fonts/Graphik/Graphik-Bold.otf) format('otf'),
+//        url(../fonts/Graphik/Graphik-Bold.ttf) format('truetype'),
+//        url(../fonts/Graphik/Graphik-Bold.woff2) format('woff2');
+//   font-weight: 700;
+// }
+// @font-face {
+//   font-family: 'Graphik';
+//   src: url(../fonts/Graphik/Graphik-Regular.eot);
+//   src: url(../fonts/Graphik/Graphik-Regular.eot?#iefix) format('embedded-opentype'),
+//        url(../fonts/Graphik/Graphik-Regular.otf) format('otf'),
+//        url(../fonts/Graphik/Graphik-Regular.ttf) format('truetype'),
+//        url(../fonts/Graphik/Graphik-Regular.woff2) format('woff2');
+//   font-weight: normal;
+// }
+
+// @import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import "./fonts";
+//Base
+@import "./base";
+// font-family: 'Roboto', sans-serif;
+body{
+  &.no-scroll{
+    overflow: hidden;
+  }
+}
+.wrapper{
+  font-family: 'Graphik'; //разобраться со шрифтами и поменять на
+}
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.subscribe-btn{
+  background-color: #2091f9; /* Green */
+  padding: 16px 62px;
+  border: none;
+  color:#FFFFFF;
+  font-size: 20px;
+  line-height: 1;
+  font-family: 'Graphik';
+  border-radius: 35px;
+  cursor: pointer;
+  transition: all .2s ease;
+  &:hover{
+    box-shadow: 0px 0px 17px -7px rgba(171,171,171,1);
+    background-color: #fff12e;
+    color:#374754;
+    font-weight: 700;
+  }
+  &:active{
+    padding-bottom: 10px;
+  }
+}
+//Header    
+//Main
+.main>div, .footer{
+  padding: 100px 0;
+}
+.main-title{ 
+  color:#252B42;
+  font-size: 48px; 
+  line-height: 55px
+}
+.main-subtitle{
+  color: #374754;
+  font-size: 28px; 
+  line-height: 40px
+}
+//Modal
+.modal-try {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.63);
+  display: none;
+  &.active{
+    display: block;
+    //overflow: hidden;
+  }
+  
+  &__inner {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 24%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 50px;
+    background-color:#e9e9e9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    border-radius: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    position: relative;
+    span{
+      position: absolute;
+      bottom: -40px;
+      right: 0;
+      font-size: 15px;
+      color:black;
+      //font-weight: 400;
+    }
+  }
+  &__close{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    &::before, &::after{
+      content:'';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color:black;
+      border-radius: 10px;
+    }
+    &::before{
+      transform: rotate(45deg);
+    }
+    &::after{
+      transform: rotate(-45deg);
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    transition: .5s all ease ;
+    input{
+      font-size: 18px;
+      border: 1px solid #8a8989;
+      padding: 10px;
+      border-radius:10px;
+      &.incorrect{
+        border: 1px solid red;
+      }
+    }
+  }
+  &__input-name {
+    //width: 60%;
+  }
+
+  &__input-email {
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+  &__result{
+    font-size: 20px;
+    display: none;
+    &.success{
+      display: block;
+      color:green;
+    }
+    &.failed{
+      display: block;
+      color:red;
+    }
+  }
+}
+
+//Header
+@import "./modules/header";
+//Features
+@import "./modules/features";
+//Calendar
+@import "./modules/calendar";
+//Subscribe
+@import "./modules/subscribe";
+//Partners
+@import "./modules/partners";
+//Testimonials
+@import "./modules/testimonials";
+//Prices
+@import "./modules/prices";
+//Contact
+@import "./modules/contact";
+//Footer
+@import "./modules/footer";
+
+//Media
+@import "./media.scss"; 
+
+
+

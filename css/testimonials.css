@@ -1,0 +1,35 @@
+.testimonials {
+  padding: 100px 0;
+  text-align: center;
+}
+.testimonials__title {
+  margin-bottom: 90px;
+}
+.testimonials__img {
+  margin-bottom: 50px;
+}
+.testimonials__subtitle {
+  margin: 0 auto 60px;
+  max-width: 80%;
+}
+.testimonials-person {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 82px;
+}
+.testimonials-person__name {
+  font-size: 16px;
+  line-height: 23px;
+  color: #374754;
+}
+.testimonials-person__prof {
+  font-size: 15px;
+  line-height: 28px;
+  color: #252B42;
+}
+.testimonials__btn {
+  font-weight: 700;
+}

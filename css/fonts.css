@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: "Graphik";
+  src: url(../fonts/Graphik/Graphik-Bold.eot);
+  src: url(../fonts/Graphik/Graphik-Bold.eot?#iefix) format("embedded-opentype"), url(../fonts/Graphik/Graphik-Bold.otf) format("otf"), url(../fonts/Graphik/Graphik-Bold.ttf) format("truetype"), url(../fonts/Graphik/Graphik-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Graphik";
+  src: url(../fonts/Graphik/Graphik-Regular.eot);
+  src: url(../fonts/Graphik/Graphik-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/Graphik/Graphik-Regular.otf) format("otf"), url(../fonts/Graphik/Graphik-Regular.ttf) format("truetype"), url(../fonts/Graphik/Graphik-Regular.woff2) format("woff2");
+  font-weight: normal;
+}

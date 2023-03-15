@@ -1,0 +1,22 @@
+.calendar{
+  padding: 100px 0 100px 0;
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title{
+    max-width: 60%;
+    margin-bottom: 27px;
+  }
+  &__subtitle{
+    max-width: 90%;
+    margin-bottom: 70px;
+  }
+  &__img{
+    flex: 1 0 50%;
+    & img{
+      width: 100%;
+    }
+  }
+}

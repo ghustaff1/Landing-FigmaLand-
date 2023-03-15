@@ -1,0 +1,72 @@
+.subscribe {
+  padding: 100px 0;
+}
+.subscribe__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.subscribe-mobile__top {
+  display: none;
+}
+.subscribe__img {
+  flex: 1 0 50%;
+}
+.subscribe__img img {
+  max-width: 100%;
+}
+.subscribe__text {
+  color: #252B42;
+  position: relative;
+}
+.subscribe__label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #252B42;
+  margin-bottom: 17px;
+}
+.subscribe__title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  line-height: 55px;
+}
+.subscribe__subtitle-bold {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+.subscribe__subtitle-regular {
+  font-size: 18px;
+  line-height: 25px;
+  color: #374754;
+  margin-bottom: 36px;
+}
+.subscribe__form {
+  display: flex;
+  gap: 12px;
+}
+.subscribe__input {
+  font-size: 18px;
+  color: #18171D;
+  line-height: 16px;
+  border: none;
+  background-color: #E8E8E8;
+  padding: 14px 80px 14px 25px;
+  border-radius: 35px;
+}
+.subscribe__result {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  font-size: 18px;
+  line-height: 25px;
+  color: #374754;
+}
+.subscribe__result.success {
+  color: green;
+}
+.subscribe__result.failed {
+  color: red;
+}

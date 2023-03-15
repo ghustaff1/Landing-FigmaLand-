@@ -1,0 +1,61 @@
+.footer {
+  padding: 100px 0;
+  background-color:#252B42;
+  & a{
+    color:white;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  &__item {
+  }
+
+  &__topic {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+
+  &__pieces {
+    
+  }
+
+  &__piece {
+    font-size: 15px;
+    line-height: 1.86;
+    margin-bottom: 16px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 35px;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+  }
+
+  &__socials {
+    display: flex;
+    gap: 28px;
+    & path:hover{
+      fill: #2091f9;
+    }
+  }
+
+  &__social {
+  }
+
+}

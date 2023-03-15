@@ -1,0 +1,112 @@
+.header{
+  //width: 100vw;
+  padding-top: 39px;
+  min-height: 100vh;
+  //max-width: 100%;
+  background: url('../img/header/header__bg.png')0 0/100% auto  no-repeat;
+  //background: url('../img/header/header__bg.png')center/auto auto  no-repeat;
+  //сделать при меньшем экране (то что выше)
+  .nav{
+    padding-bottom: 39px;
+    &__row{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    &__item{
+      display: flex;
+      gap: 41px;
+      align-items: center;
+    }
+    &__link{
+      
+      a{
+        color: white;
+        font-size: 15px;
+        line-height: 1.86;
+        letter-spacing: .2px;
+        &:hover{
+          color:#BABABA;
+        }
+      }
+    }
+    &__item-refs{
+      //margin-right: -40px;
+    }
+    &__item-logo{
+      margin-right: 0;
+    }
+    &__item-svg{
+      gap: 28px;
+
+    }
+    &__svg{
+      &:hover{
+        path{
+          fill: #2091f9;
+        }
+      } 
+    }
+    &__burger-icon{
+      display: none;
+      cursor:pointer;
+      &.clicked{
+        margin: 0 200px 0 0;
+        position: fixed;
+        right: 40px;
+      }
+      &.change-color{
+        path{
+          fill: black;
+        }
+      }
+    }
+    &-burger__menu{
+      padding: 40px;
+      position: fixed;
+      z-index: 20;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      transition: all .5s ease;
+      background: linear-gradient(0deg, rgba(237,219,168,1) 24%, rgba(237,219,168,1) 29%, rgba(224,191,77,1) 63%, rgba(222,188,66,1) 88%, rgba(241,227,196,1) 100%);
+      right: -100%;
+      height: 100%;
+      display: none;
+      &.active{
+        right: 0;
+      }
+      
+    }
+    
+  }
+  .nav-burger__link a{
+    font-weight: 700;
+    font-size: 38px;
+      color:rgb(63, 63, 63);
+  }
+  &__info{
+    //position: relative;
+    //z-index: 2;
+    text-align: center;
+    margin-top: 80px;
+    color:white;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 1.14;
+    max-width: 55%;
+    margin: 0 auto;
+  }
+  &__subtitle{
+    font-size: 28px;
+    line-height: 1.42;
+    max-width: 63%;
+    margin: 20px auto 0 auto;
+  }
+  &__btn{
+    margin:80px 0 50px 0;
+  }
+  
+}

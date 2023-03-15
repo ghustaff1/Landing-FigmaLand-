@@ -1,0 +1,45 @@
+.testimonials {
+  padding: 100px 0;
+  text-align: center;
+    &__title {
+      margin-bottom: 90px;
+    }
+  
+    &__img {
+      margin-bottom: 50px;
+    }
+  
+    &__subtitle {
+      margin: 0 auto 60px;
+      max-width: 80%;
+    }
+  
+    &-person {
+      display: flex;
+      justify-content: center;
+      gap: 13px;
+      align-items: center;
+      text-align: left;
+      margin-bottom: 82px;
+      &__photo{
+      }
+      &__info {
+      }
+    
+      &__name {
+        font-size: 16px;
+        line-height: 23px;
+        color:#374754;
+      }
+    
+      &__prof {
+        font-size: 15px;
+        line-height: 28px;
+        color:#252B42;
+      }
+    }
+  
+    &__btn {
+      font-weight: 700;
+    }
+  }

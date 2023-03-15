@@ -1,0 +1,80 @@
+.contact {
+  padding: 203px 0 102px 0;
+}
+.contact__title {
+  text-align: center;
+  margin-bottom: 17px;
+}
+.contact__subtitle {
+  text-align: center;
+  max-width: 45%;
+  margin: 0 auto 50px;
+}
+.contact__content {
+  display: flex;
+  gap: 50px;
+}
+.contact-form {
+  border: 1px solid #E8E8E8;
+  border-radius: 35px;
+  padding: 52px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  flex: 0 0 35%;
+  align-items: start;
+  transition: 0.3s all ease;
+}
+.contact-form input, .contact-form textarea {
+  border: none;
+  background-color: #E8E8E8;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 10px 10px 10px 25px;
+  min-height: 50px;
+  border-radius: 50px;
+  width: 100%;
+}
+.contact-form:hover {
+  box-shadow: 7px 7px 23px -14px #BABABA;
+}
+.contact-form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #252B42;
+  text-align: center;
+}
+.contact-form #contact-textarea__message {
+  border-radius: 5px;
+  min-height: 30%;
+  resize: none;
+  padding: 20px;
+}
+.contact__btn {
+  padding: 18px 48px;
+}
+.contact__side {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.contact-contacts {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+.contact__map {
+  align-self: center;
+}
+.contact__map iframe {
+  min-width: 71%;
+}
+.contact-socials {
+  display: flex;
+  gap: 24px;
+}
+.contact-socials__social path {
+  fill: #2091F9;
+}
