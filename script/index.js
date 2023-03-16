@@ -186,7 +186,7 @@ function removeSlider(parent){
     }
   });
   
-  //Subscribe
+//Subscribe
   const subscribeForm=document.querySelector('.subscribe__form');
   subscribeForm.addEventListener('submit', e=>{
     e.preventDefault();
@@ -209,6 +209,36 @@ function removeSlider(parent){
       setTimeout(()=>{
         subscribeForm.reset();
         subscribeResult.remove();
+      }, 3000)
+    })
+  })
+
+//Contact
+  //Form
+  const contactFormMessage={
+    failed:'Something went wrong...',
+    incorrect:'Please fill in fields!',
+    success:"Thank you, we'll read your message!",
+  }
+  const contactForm=document.querySelector('.contact__form'),
+        contactFormResult=document.querySelector('.contact-form__result');
+  contactForm.addEventListener('submit', e=>{
+    e.preventDefault();
+    const formData=new FormData(contactForm);
+    const json=JSON.stringify(Object.fromEntries(formData.entries()));
+    postData('http://localhost:3000/messages', json)
+    .then(()=>{
+      contactFormResult.classList.add('success');
+      contactFormResult.textContent=contactFormMessage.success;
+    })
+    .catch(()=>{
+      contactFormResult.classList.add('failed');
+      contactFormResult.textContent=contactFormMessage.failed;
+    })
+    .finally(()=>{
+      setTimeout(()=>{
+        contactFormResult.className='contact-form__result';
+        contactForm.reset();
       }, 3000)
     })
   })

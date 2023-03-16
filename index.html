@@ -345,10 +345,11 @@
           <div class="contact__content">
             <form class="contact__form contact-form">
               <div class="contact-form__title">Contact us</div>
-              <input type="text" name="name" class="contact-form__name" placeholder="Your Name">
-              <input type="text" name="email" class="contact-form__email" placeholder="Your email">
-              <textarea placeholder="Your Message" name="message" class="form-textarea__message" id="contact-textarea__message" cols="30" rows="10"></textarea>
+              <input required type="text" name="name" class="contact-form__name" placeholder="Your Name">
+              <input required type="text" name="email" class="contact-form__email" placeholder="Your email">
+              <textarea required placeholder="Your Message" name="message" class="form-textarea__message" id="contact-textarea__message" cols="30" rows="10"></textarea>
               <button class="contact__btn subscribe-btn">Send</button>
+              <div class="contact-form__result"></div>
             </form>
             <div class="contact__side">
               <div class="contact__contacts contact-contacts">

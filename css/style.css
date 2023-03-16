@@ -711,6 +711,17 @@ body.no-scroll {
   resize: none;
   padding: 20px;
 }
+.contact-form__result {
+  display: none;
+}
+.contact-form__result.success {
+  display: block;
+  color: green;
+}
+.contact-form__result.failed {
+  display: block;
+  color: red;
+}
 .contact__btn {
   padding: 18px 48px;
 }

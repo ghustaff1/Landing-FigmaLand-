@@ -61,6 +61,17 @@
       resize: none;
       padding: 20px;
     }
+    &__result{
+      display: none;
+      &.success{
+        display: block;
+        color:green;
+      }
+      &.failed{
+        display: block;
+        color:red;
+      }
+    }
   }
 
   &__btn {
